@@ -10,11 +10,11 @@
 
 @media (max-width: 600px) {
   .dashboard-main {
-    font-size: 2rem !important;
+    font-size: 20px !important;
   }
 
   .landing-main {
-    font-size: 2rem !important;
+    font-size: 20px !important;
   }
 
   .logout-button {
@@ -28,15 +28,19 @@
   .landing-login-button {
     width: 300px !important;
   }
+
+  .dashboard-main p{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px) {
   .dashboard-main {
-    font-size: 1.5rem !important;
+    font-size: 15px !important;
   }
 
   .landing-main {
-    font-size: 1.5rem !important;
+    font-size: 15px !important;
   }
 
   .logout-button {
@@ -44,11 +48,13 @@
   }
 
   .landing-register-button {
-    padding: 12px;
+    padding: 8px !important;
+    width: 250px !important;
   }
 
   .landing-login-button {
-    padding: 12px;
+    padding: 8px !important;
+    width: 250px !important;
   }
 }
 
@@ -64,11 +70,11 @@
   }
 
   .login-center h2 {
-    font-size: 3rem;
+    font-size: 30px;
   }
 
   .login-center p {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 
   .register-center-options {
@@ -82,10 +88,10 @@
   }
 
   .register-center h2 {
-    font-size: 3rem;
+    font-size: 30px;
   }
 
   .register-center p {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 }

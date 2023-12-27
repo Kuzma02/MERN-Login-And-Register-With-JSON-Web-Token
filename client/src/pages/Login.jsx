@@ -5,12 +5,51 @@ import GoogleSvg from "../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import "../styles/Login.css";
-import { Link } from "react-router-dom";
-
-
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Login = () => {
-  const [ showPassword, setShowPassword ] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [ token, setToken ] = useState(JSON.parse(localStorage.getItem("auth")) || "");
+  const navigate = useNavigate();
+
+
+
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    let email = e.target.email.value;
+    let password = e.target.password.value;
+
+    if (email.length > 0 && password.length > 0) {
+      const formData = {
+        email,
+        password,
+      };
+      try {
+        const response = await axios.post(
+          "http://localhost:3000/api/v1/login",
+          formData
+        );
+        localStorage.setItem('auth', JSON.stringify(response.data.token));
+        toast.success("Login successfull");
+        navigate("/dashboard");
+      } catch (err) {
+        console.log(err);
+        toast.error(err.message);
+      }
+    } else {
+      toast.error("Please fill all inputs");
+    }
+  };
+
+  useEffect(() => {
+    if(token !== ""){
+      toast.success("You already logged in");
+      navigate("/dashboard");
+    }
+  }, []);
+
   return (
     <div className="login-main">
       <div className="login-left">
@@ -24,12 +63,27 @@ const Login = () => {
           <div className="login-center">
             <h2>Welcome back!</h2>
             <p>Please enter your details</p>
-            <form>
-              <input type="email" placeholder="Email" />
+            <form onSubmit={handleLoginSubmit}>
+              <input type="email" placeholder="Email" name="email" />
               <div className="pass-input-div">
-                <input type={showPassword ? "text" : "password"} placeholder="Password" />
-                {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
-                
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  name="password"
+                />
+                {showPassword ? (
+                  <FaEyeSlash
+                    onClick={() => {
+                      setShowPassword(!showPassword);
+                    }}
+                  />
+                ) : (
+                  <FaEye
+                    onClick={() => {
+                      setShowPassword(!showPassword);
+                    }}
+                  />
+                )}
               </div>
 
               <div className="login-center-options">
@@ -44,8 +98,8 @@ const Login = () => {
                 </a>
               </div>
               <div className="login-center-buttons">
-                <button type="button">Log In</button>
-                <button type="button">
+                <button type="submit">Log In</button>
+                <button type="submit">
                   <img src={GoogleSvg} alt="" />
                   Log In with Google
                 </button>
