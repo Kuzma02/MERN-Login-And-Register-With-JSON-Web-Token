@@ -1,0 +1,188 @@
+
+.register-main{
+    display: flex;
+  }
+  
+  .register-left{
+    flex-grow: 1;
+    height: 100vh;
+    background-color: #E9E9E9;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-left img{
+    width: 400px;
+  }
+  
+  .register-right{
+  
+    height: 100vh;
+  
+    flex-grow: 1;
+  
+  
+  }
+  
+  .register-right-container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .register-right form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-logo{
+    align-self: center;
+    padding-top: 50px;
+  }
+  
+  .register-center{
+    margin: auto 0;
+  }
+  
+  .register-logo img{
+    width: 50px;
+  }
+  
+  .register-center h2{
+    font-size: 3.5rem;
+  }
+  
+  .register-center{
+    text-align: center;
+  }
+  
+  .register-center p{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  form input[type='email'],
+  form input[type='password'],
+  form input[type='text']
+   {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .pass-input-div{
+    position: relative;
+  }
+  
+  .pass-input-div svg{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  form button[type='button'] {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  
+  
+  .register-center-options{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .remember-div{
+    display:flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+  
+  .remember-div label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+  
+  .forgot-pass-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .forgot-pass-link:hover{
+    text-decoration: underline;
+  }
+  
+  .register-center-buttons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .register-center-buttons button:nth-child(1){
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    transition: background 1s linear 0ms;
+    transition: color 500ms linear 0ms;
+  }
+  
+  .register-center-buttons button:nth-child(1):hover{
+    color: #333;
+    background-color: white;
+  }
+  
+  .register-center-buttons button:nth-child(2){
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    transition: background 500ms linear 0ms;
+  }
+  
+  .register-center-buttons button:nth-child(2) img{
+    width: 30px;
+  }
+  
+  .register-center-buttons button:nth-child(2):hover{
+    background: #c4c4c4c2;
+  }
+  
+  .register-bottom-p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+  }
+  
+  .register-bottom-p a{
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-bottom-p a:hover{
+    text-decoration: underline;
+  }
+  

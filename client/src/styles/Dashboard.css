@@ -1,0 +1,33 @@
+.dashboard-main{
+    font-size: 3rem;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logout-button{
+    background: black;
+    color: white;
+    border: 3px solid black;
+    transition: background 1s linear 0ms;
+    transition: color 500ms linear 0ms;
+
+    width: 500px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  
+  .logout-button:hover{
+    color: #333;
+    background-color: white;
+  }

@@ -1,0 +1,91 @@
+@media (max-width: 900px) {
+  .login-left {
+    display: none;
+  }
+
+  .register-left {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-main {
+    font-size: 2rem !important;
+  }
+
+  .landing-main {
+    font-size: 2rem !important;
+  }
+
+  .logout-button {
+    width: 300px;
+  }
+
+  .landing-register-button {
+    width: 300px !important;
+  }
+
+  .landing-login-button {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .dashboard-main {
+    font-size: 1.5rem !important;
+  }
+
+  .landing-main {
+    font-size: 1.5rem !important;
+  }
+
+  .logout-button {
+    padding: 12px;
+  }
+
+  .landing-register-button {
+    padding: 12px;
+  }
+
+  .landing-login-button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .login-center-options {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .login-center-buttons {
+    margin-top: 20px;
+  }
+
+  .login-center h2 {
+    font-size: 3rem;
+  }
+
+  .login-center p {
+    font-size: 1.5rem;
+  }
+
+  .register-center-options {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .register-center-buttons {
+    margin-top: 20px;
+  }
+
+  .register-center h2 {
+    font-size: 3rem;
+  }
+
+  .register-center p {
+    font-size: 1.5rem;
+  }
+}
