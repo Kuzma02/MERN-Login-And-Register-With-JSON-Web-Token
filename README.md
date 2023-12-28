@@ -52,8 +52,9 @@ npm install
 ```
 
 5. Configure MongoDB and JWT:
-Ensure MongoDB is installed and running.
-Create a .env file in the root directory with the following contents:
+Visit MongoDB website, create account, database and take connection string.
+After that generate 256 bits random key and add it to .env file.
+Create the .env file in the root directory with the following contents:
 ```
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
