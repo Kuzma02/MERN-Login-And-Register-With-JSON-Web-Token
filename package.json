@@ -1,14 +1,16 @@
 {
-  "name": "simple-login-and-register-with-json-web-token",
+  "name": "Siigo Integrations Woocommerce",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kuzma02",
   "license": "ISC",
   "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -18,6 +20,6 @@
     "mongoose": "^8.0.3"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.1.0"
   }
 }
