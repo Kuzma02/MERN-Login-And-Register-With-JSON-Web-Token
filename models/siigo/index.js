@@ -14,7 +14,7 @@ async function getProducts(param = false) {
       })
       .catch((error) => {
         let errorMessage = '';
-        console.log(error);
+        // console.log(error);
         if (error.response && error.response.data) {
           errorMessage = error.response.data.Message || 'Error desconocido';
           console.log('Mensaje de error:', errorMessage);

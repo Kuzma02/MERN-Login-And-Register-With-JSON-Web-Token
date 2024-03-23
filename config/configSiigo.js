@@ -32,12 +32,14 @@ const siigoConnect = axios.create({
 
 siigoConnect.interceptors.request.use(async (config) => {
   if (!token || tokenExpiration <= new Date()) {
+    console.log('jmjmjmj');
     await authenticate();
   }
-  config.headers.Authorization = `Bearer ${token}`;
   config.headers = {
     'Partner-Id': 'SandboxSiigoApi'
-  }
+  };
+  config.headers.Authorization = `Bearer ${token}`;
+  
   return config;
 }, (error) => {
   return Promise.reject(error);
