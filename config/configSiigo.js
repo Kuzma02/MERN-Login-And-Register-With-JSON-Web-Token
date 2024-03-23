@@ -32,7 +32,6 @@ const siigoConnect = axios.create({
 
 siigoConnect.interceptors.request.use(async (config) => {
   if (!token || tokenExpiration <= new Date()) {
-    console.log('jmjmjmj');
     await authenticate();
   }
   config.headers = {

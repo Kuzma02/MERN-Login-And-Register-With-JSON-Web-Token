@@ -1,5 +1,3 @@
-const jwt = require("jsonwebtoken");
-// const User = require("../models/User");
 const { getProducts } = require("../models/woocommerce/products");
 const { getOrders } = require("../models/woocommerce/orders");
 
