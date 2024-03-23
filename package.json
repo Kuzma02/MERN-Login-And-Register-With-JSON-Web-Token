@@ -1,10 +1,10 @@
 {
-  "name": "Siigo Integrations Woocommerce",
+  "name": "siigo-integrations-woocommerce",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kuzma02",
@@ -13,6 +13,7 @@
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
