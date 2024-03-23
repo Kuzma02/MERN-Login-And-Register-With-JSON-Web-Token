@@ -2,7 +2,8 @@ const siigoConnect = require('./../../config/configSiigo');
 
 async function getProducts(param = false) {
   try {
-    const responseRequest = await siigoConnect.get(`/products?code=${param}`)
+    const params = param ? `?code=${param}` : '';
+    const responseRequest = await siigoConnect.get(`/products${params}`)
       .then((response) => {
         console.log("Response Status:", response.status);
         console.log("Response Headers:", response.headers);
