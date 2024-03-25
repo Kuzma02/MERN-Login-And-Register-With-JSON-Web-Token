@@ -38,7 +38,7 @@ siigoConnect.interceptors.request.use(async (config) => {
     'Partner-Id': 'SandboxSiigoApi'
   };
   config.headers.Authorization = `Bearer ${token}`;
-  
+
   return config;
 }, (error) => {
   return Promise.reject(error);

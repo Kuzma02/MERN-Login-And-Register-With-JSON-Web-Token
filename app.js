@@ -13,7 +13,7 @@ const siigo = require("./routes/siigo");
 app.use(express.json());
 
 app.use(cors())
-app.get("/", (req, res) => {res.send("Hello World");});
+app.get("/", (req, res) => res.send("Hello World"));
 app.use("/api/v1/auth", auth);
 app.use("/api/v1/users", users);
 app.use("/api/v1/woocommerce", woocommerce);
@@ -23,14 +23,14 @@ const port = process.env.PORT || 3000;
 
 const start = async () => {
 
-    try {        
+    try {
         await connectDB(process.env.MONGO_URI);
         app.listen(port, () => {
             console.log(`Server is listening on port ${port}`);
         })
 
     } catch (error) {
-       console.log(error); 
+        console.log(error);
     }
 }
 

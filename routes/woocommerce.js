@@ -3,23 +3,21 @@ const router = express.Router();
 
 const { allProducts, orders } = require("../controllers/woocommerce");
 const authMiddleware = require('../middleware/auth');
-const { validarSecreto } = require("../utils/woocomerce-valitation");
+const processOrder = require("../controllers/processWoocomerceCreatedOrder");
+const processProduct = require("../controllers/processWoocomerceCreatedProduct");
 
 router.route("/get-products").get(authMiddleware, allProducts);
 router.route("/get-orders").get(authMiddleware, orders);
 
-//webhook
+//webhooks
 router.route("/create-product-wh").post((req, res) => {
-    const localSecret = process.env.WOOCOMMERCE_WEBHOOK_SECRET;
-    if(!validarSecreto(req, localSecret)) {
-        console.log("Invalid secret");
-        res.status(401).send("Invalid secret")
-        return;
-    };
-    // console.log("Valid secret");
-    console.log(req);
-    // console.log(req.body);
-    res.send("Webhook received");
+  processProduct(req.body);
+  res.send("Webhook received");
+});
+
+router.route("/create-order-wh").post((req, res) => {
+  processOrder(req.body);
+  res.send("Webhook received");
 });
 
 
