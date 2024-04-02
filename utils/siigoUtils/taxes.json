@@ -1,0 +1,289 @@
+[
+  {
+      "id": 1270,
+      "name": "IVA 19%",
+      "type": "IVA",
+      "percentage": 19.00,
+      "active": true
+  },
+  {
+      "id": 1271,
+      "name": "IVA 5%",
+      "type": "IVA",
+      "percentage": 5.00,
+      "active": true
+  },
+  {
+      "id": 1272,
+      "name": "Retefuente 11%",
+      "type": "Retefuente",
+      "percentage": 11.00,
+      "active": true
+  },
+  {
+      "id": 1273,
+      "name": "Retefuente 10%",
+      "type": "Retefuente",
+      "percentage": 10.00,
+      "active": true
+  },
+  {
+      "id": 1274,
+      "name": "Retefuente 6%",
+      "type": "Retefuente",
+      "percentage": 6.00,
+      "active": true
+  },
+  {
+      "id": 1275,
+      "name": "Retefuente 4%",
+      "type": "Retefuente",
+      "percentage": 4.00,
+      "active": true
+  },
+  {
+      "id": 1276,
+      "name": "Retefuente 2.5%",
+      "type": "Retefuente",
+      "percentage": 2.50,
+      "active": true
+  },
+  {
+      "id": 1277,
+      "name": "ReteICA 11.04",
+      "type": "ReteICA",
+      "percentage": 11.04,
+      "active": true
+  },
+  {
+      "id": 1278,
+      "name": "ReteICA 13.8",
+      "type": "ReteICA",
+      "percentage": 13.80,
+      "active": true
+  },
+  {
+      "id": 1279,
+      "name": "ReteICA 9.66",
+      "type": "ReteICA",
+      "percentage": 9.66,
+      "active": true
+  },
+  {
+      "id": 1280,
+      "name": "ReteICA 8",
+      "type": "ReteICA",
+      "percentage": 8.00,
+      "active": true
+  },
+  {
+      "id": 1281,
+      "name": "ReteICA 7",
+      "type": "ReteICA",
+      "percentage": 7.00,
+      "active": true
+  },
+  {
+      "id": 1282,
+      "name": "ReteICA 6.9",
+      "type": "ReteICA",
+      "percentage": 6.90,
+      "active": true
+  },
+  {
+      "id": 1283,
+      "name": "ReteICA 4.14",
+      "type": "ReteICA",
+      "percentage": 4.14,
+      "active": true
+  },
+  {
+      "id": 1284,
+      "name": "ReteIVA 15%",
+      "type": "ReteIVA",
+      "percentage": 15.00,
+      "active": true
+  },
+  {
+      "id": 1285,
+      "name": "Impoconsumo 8%",
+      "type": "Impoconsumo",
+      "percentage": 8.00,
+      "active": true
+  },
+  {
+      "id": 1286,
+      "name": "Impoconsumo por valor",
+      "type": "Impoconsumo",
+      "percentage": 0.00,
+      "active": true
+  },
+  {
+      "id": 1287,
+      "name": "Retefuente 3.5%",
+      "type": "Retefuente",
+      "percentage": 3.50,
+      "active": true
+  },
+  {
+      "id": 1288,
+      "name": "Retefuente 7%",
+      "type": "Retefuente",
+      "percentage": 7.00,
+      "active": true
+  },
+  {
+      "id": 1289,
+      "name": "Retefuente 2%",
+      "type": "Retefuente",
+      "percentage": 2.00,
+      "active": true
+  },
+  {
+      "id": 1290,
+      "name": "Retefuente 1%",
+      "type": "Retefuente",
+      "percentage": 1.00,
+      "active": true
+  },
+  {
+      "id": 13721,
+      "name": "IVA 0%",
+      "type": "IVA",
+      "percentage": 0.00,
+      "active": true
+  },
+  {
+      "id": 17451,
+      "name": "IVA 16%",
+      "type": "IVA",
+      "percentage": 16.00,
+      "active": true
+  },
+  {
+      "id": 17452,
+      "name": "AdValorem 20%",
+      "type": "AdValorem",
+      "percentage": 20.00,
+      "active": true
+  },
+  {
+      "id": 17453,
+      "name": "AdValorem 25%",
+      "type": "AdValorem",
+      "percentage": 25.00,
+      "active": true
+  },
+  {
+      "id": 17454,
+      "name": "Autorretención 0.40%",
+      "type": "Autorretencion",
+      "percentage": 0.40,
+      "active": true
+  },
+  {
+      "id": 17455,
+      "name": "AutorretenciÃ³n 0.80%",
+      "type": "Autorretencion",
+      "percentage": 0.80,
+      "active": true
+  },
+  {
+      "id": 17456,
+      "name": "AutorretenciÃ³n 1.60%",
+      "type": "Autorretencion",
+      "percentage": 1.60,
+      "active": true
+  },
+  {
+      "id": 17457,
+      "name": "ReteIVA 100%",
+      "type": "ReteIVA",
+      "percentage": 100.00,
+      "active": true
+  },
+  {
+      "id": 17458,
+      "name": "Retefuente 1.5%",
+      "type": "Retefuente",
+      "percentage": 1.50,
+      "active": true
+  },
+  {
+      "id": 17459,
+      "name": "Retefuente 0.10%",
+      "type": "Retefuente",
+      "percentage": 0.10,
+      "active": true
+  },
+  {
+      "id": 17460,
+      "name": "Retefuente 0.50%",
+      "type": "Retefuente",
+      "percentage": 0.50,
+      "active": true
+  },
+  {
+      "id": 17461,
+      "name": "Retefuente 20%",
+      "type": "Retefuente",
+      "percentage": 20.00,
+      "active": true
+  },
+  {
+      "id": 18534,
+      "name": "prueba azucarados",
+      "type": "Bebidas azucaradas",
+      "percentage": 10.00,
+      "active": true
+  },
+  {
+      "id": 18535,
+      "name": "prueba ultraprod",
+      "type": "Comestibles ultraprocesados",
+      "percentage": 10.00,
+      "active": true
+  },
+  {
+      "id": 18545,
+      "name": "IVA 19% Servicios",
+      "type": "IVA",
+      "percentage": 19.00,
+      "active": true
+  },
+  {
+      "id": 18559,
+      "name": "INC 4%",
+      "type": "Impoconsumo",
+      "percentage": 4.00,
+      "active": true
+  },
+  {
+      "id": 18562,
+      "name": "ico prueba",
+      "type": "Impoconsumo",
+      "percentage": 0.00,
+      "active": true
+  },
+  {
+      "id": 18568,
+      "name": "IVA INACTIVO",
+      "type": "IVA",
+      "percentage": 19.00,
+      "active": false
+  },
+  {
+      "id": 18570,
+      "name": "IMP ISI",
+      "type": "IVA",
+      "percentage": 19.00,
+      "active": true
+  },
+  {
+      "id": 18572,
+      "name": "IVA 19% SC",
+      "type": "IVA",
+      "percentage": 19.00,
+      "active": true
+  }
+]

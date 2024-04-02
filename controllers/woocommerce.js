@@ -1,10 +1,20 @@
-const { getProducts } = require("../models/woocommerce/products");
+const { getProducts, findProductBySku } = require("../models/woocommerce/products");
 const { getOrders } = require("../models/woocommerce/orders");
 
 
 const allProducts = async (req, res) => {
   try {
     const response = await getProducts();
+    res.status(200).json(response);
+  }
+  catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const findProduct = async (req, res) => {
+  try {
+    const response = await findProductBySku(req.query.sku);
     res.status(200).json(response);
   }
   catch (error) {
@@ -30,5 +40,6 @@ const orders = async (req, res) => {
 
 module.exports = {
   allProducts,
+  findProduct,
   orders
 };

@@ -1,0 +1,57 @@
+{
+  "company_key": "INVERSIONESPARADISESAS",
+  "username": "invepcontabilidad@gmail.com",       
+  "topic": "public.siigoapi.products.create",      
+  "resources": [
+    {
+      "id": "07c95d63-6602-4eee-baa6-3ad8fe51f230",
+      "code": "PRUEBA-CODIGO",
+      "name": "prueba producto",
+      "account_group": {
+        "id": "1573",
+        "name": "GORRAS LA"
+      },
+      "type": "Product",
+      "stock_control": true,
+      "active": true,
+      "tax_classification": "Taxed",
+      "tax_consumption_value": "0",
+      "taxes": [
+        {
+          "id": "5638",
+          "name": "IVA 19%",
+          "type": "IVA",
+          "percentage": "19.00"
+        }
+      ],
+      "prices": [
+        {
+          "currency_code": "COP",
+          "price_list": [
+            {
+              "position": "1",
+              "name": "Precio de venta 1",
+              "value": "250000.0"
+            }
+          ]
+        }
+      ],
+      "unit": {
+        "code": "94",
+        "name": "unidad"
+      },
+      "additional_fields": {
+        "barcode": "",
+        "brand": "",
+        "tariff": "",
+        "model": ""
+      },
+      "available_quantity": "0.00",
+      "metadata": {
+        "created": "03/27/2024 12:38:07",
+        "last_updated": "",
+        "stock_updated": ""
+      }
+    }
+  ]
+}

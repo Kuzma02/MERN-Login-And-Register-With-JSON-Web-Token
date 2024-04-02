@@ -1,0 +1,49 @@
+{
+  "company_key": "INVERSIONESPARADISESAS",
+  "username": "invepcontabilidad@gmail.com",
+  "topic": "public.siigoapi.products.create",
+  "resources": [
+    {
+      "id": "2fa41f3c-3605-43a8-9d05-a9d56eec7462",
+      "code": "prueba-sin-iva",
+      "name": "producto prueba sin iva",
+      "account_group": {
+        "id": "1520",
+        "name": "GOORIN BROS"
+      },
+      "type": "Product",
+      "stock_control": true,
+      "active": true,
+      "tax_classification": "Excluded",
+      "tax_consumption_value": "0",
+      "prices": [
+        {
+          "currency_code": "COP",
+          "price_list": [
+            {
+              "position": "1",
+              "name": "Precio de venta 1",
+              "value": "35000.0"
+            }
+          ]
+        }
+      ],
+      "unit": {
+        "code": "94",
+        "name": "unidad"
+      },
+      "additional_fields": {
+        "barcode": "",
+        "brand": "",
+        "tariff": "",
+        "model": ""
+      },
+      "available_quantity": "0.00",
+      "metadata": {
+        "created": "03/27/2024 12:58:25",
+        "last_updated": "",
+        "stock_updated": ""
+      }
+    }
+  ]
+}
